@@ -1,0 +1,31 @@
+@use '_static' as colo1;
+@use 'static1' as color2;
+$color:red,green,yellow;
+$w:100px;
+body{
+    margin: 0%;
+    padding:2rem;
+    background-color:nth($color,3);
+    color:nth($color,2);
+}
+%custom{
+    margin-top:1rem;
+    padding:10px;
+    background:gray;
+    color:red;
+    border:none;
+    border-radius:4px;
+    margin-right:10px
+}
+@mixin custom($color3:lightblue){
+    margin-top:1rem;
+    padding:$w;
+    background:$color3;
+    color:red;
+    border:none;
+    border-radius:10*10px;
+    margin-right:10px
+}
+a{
+    @include custom(colo1.$color1)
+}

@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Storecase from './Component/Storecase'
+import './styles/app.scss'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Storecase/>
+    <button>Click me</button>
+    <a href="#text">Button</a>
+    </>
+  )
 }
 
-export default App;
+export default App

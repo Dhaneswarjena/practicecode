@@ -1,0 +1,13 @@
+.header{
+  
+    font-size:20px;
+    background:rgb(37, 76, 168);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.header a{
+    color:#fff;
+    margin-left: 10px;
+    text-decoration:none;
+}
